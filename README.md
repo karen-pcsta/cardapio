@@ -9,3 +9,4 @@ Backend:
 Frontend:
 -React
 -Typescript
+-Bootstrap
