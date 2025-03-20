@@ -1,4 +1,4 @@
-import "./styles.css"
+import "../styles.css"
 
 interface CardProps {
     price: number,
@@ -8,12 +8,12 @@ interface CardProps {
 
 export function Card({ price, image, title }: CardProps) {
     return (
-        <>
-            <div className="card d-flex flex-column align-items-center justify-content-center custom-card">
-                <img src={image} alt={`Foto ${title}`} />
-                <h2>{title}</h2>
-                <p><b>Valor: </b>{price}</p>
-            </div>
-        </>
+
+        <div className="custom-card rounded shadow">
+            <img src={image} alt={`Foto ${title}`} />
+            <h2 className="text-center fs-5 pt-2">{title}</h2>
+            <p className="text-center"><b>Preço: </b>R$ {price}</p>
+        </div>
+
     )
 }

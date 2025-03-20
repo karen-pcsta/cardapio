@@ -1,0 +1,26 @@
+.custom-card {
+    width: 250px;   
+  }
+  
+  .custom-card img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 200px;
+    
+  }
+  
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+
+  .custom {
+    width: 100vw;
+  }
+
+
+  /*Modal*/
+
+  
