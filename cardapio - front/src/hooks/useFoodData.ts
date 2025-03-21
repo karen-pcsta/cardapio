@@ -16,7 +16,7 @@ export function useFoodData() {
         retry: 2
     })
 
-    console.log(query)
+    //  console.log(query)
 
     return {
         ...query,

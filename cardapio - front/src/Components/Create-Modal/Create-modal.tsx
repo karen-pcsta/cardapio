@@ -12,8 +12,8 @@ interface InputProps {
 const Input = ({ label, value, updateValue }: InputProps) => {
     return (
         <>
-            <label htmlFor="">{label}</label>
-            <input value={value} onChange={e => updateValue(e.target.value)} type="text" />
+            <label className="pt-2 pb-1 font-weight-bold" htmlFor="">{label}</label>
+            <input value={value} className="form-control" onChange={e => updateValue(e.target.value)} type="text" />
         </>
     )
 }
@@ -33,21 +33,37 @@ export function CreateModal() {
             image
         }
         mutate(foodData)
+        setTitle("")
+        setPrice(0)
+        setImage("")
     }
 
     return (
-        <div >
-            <div className="modal-body">
-                <h2>Cadastre um novo item no cardápio</h2>
-                <form action="" className="input-container">
-                    <Input label="Produto" value={title} updateValue={setTitle} />
-                    <Input label="Preço" value={price} updateValue={setPrice} />
-                    <Input label="Imagem" value={image} updateValue={setImage} />
-
-                </form>
-                <button className="btn btn-secondary" onClick={submit}>Adicionar</button>
+        <div className="modal fade" id="reg-modal" tabIndex={-1} aria-labelledby="modal-title" aria-hidden="false" >
+            <div className="modal-dialog">
+                <div className="modal-content">
+                    <div className="modal-header">
+                        <h5 id="modal-title">Cadastre um novo item no cardápio</h5>
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div className="modal-body">
+                        <form className="input-container">
+                            <div className="form-group">
+                                <Input label="Produto" value={title} updateValue={setTitle} />
+                            </div>
+                            <div className="form-group">
+                                <Input label="Preço" value={price} updateValue={setPrice} />
+                            </div>
+                            <div className="form-group">
+                                <Input label="Imagem URL" value={image} updateValue={setImage} />
+                            </div>
+                        </form>
+                    </div>
+                    <div className="modal-footer">
+                        <button type="button" className="btn btn-primary" onClick={submit}>Adicionar</button>
+                    </div>
+                </div>
             </div>
-
         </div>
     )
 }

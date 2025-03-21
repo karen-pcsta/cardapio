@@ -6,13 +6,12 @@ import { useFoodData } from './hooks/useFoodData'
 import "./styles.css"
 import { CreateModal } from './Components/Create-Modal/Create-modal'
 
+
+
 function App() {
   const { data } = useFoodData()
-  const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const handleModalOpening = () => {
-    setIsModalOpen(prevState => !prevState)
-  }
+
 
   return (
 
@@ -26,8 +25,8 @@ function App() {
             image={foodData.image}
             price={foodData.price} />)}
       </div>
-      {isModalOpen && <CreateModal />}
-      <button className={isModalOpen === false ? "btn btn-primary" : "btn btn-secondary"} onClick={handleModalOpening}>{isModalOpen === false ? "Novo Item" : "Fechar"}</button>
+      <CreateModal />
+      <button className="btn btn-primary mt-4 mb-2" data-bs-toggle="modal" data-bs-target="#reg-modal">Novo item</button>
 
     </div>
 
