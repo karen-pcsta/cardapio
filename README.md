@@ -1,6 +1,6 @@
 # 📌 Cardápio  
 
-This project is based on **Fernanda Kipper's video lessons**. My goal is to continuously improve it to solidify what I'm learning by adding new functionalities.  
+This project is based on **[Fernanda Kipper's video lessons](https://www.youtube.com/@kipperdev)**. My goal is to continuously improve it to solidify what I'm learning by adding new functionalities.  
 
 ## 🚀 Tech Stack  
 
