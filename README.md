@@ -1,12 +1,22 @@
-# cardapio
-Based on Fernanda Kipper's video lessons.
+# 📌 Cardápio  
 
-Backend:
--Java Spring Boot
--PostgreSQL (with Dbeaver)
+This project is based on **Fernanda Kipper's video lessons**. My goal is to continuously improve it to solidify what I'm learning by adding new functionalities.  
 
+## 🚀 Tech Stack  
 
-Frontend:
--React
--Typescript
--Bootstrap
+### Backend  
+- ✅ **Java Spring Boot** (JPA, Lombok)  
+- ✅ **PostgreSQL** (managed with DBeaver)  
+
+### Frontend  
+- ✅ **React**  
+- ✅ **TypeScript**  
+- ✅ **Bootstrap**  
+- ✅ **TanStack React Query**  
+
+## 🛠️ Completed Features  
+- [X] 🔧 **Update and Delete operations**  
+
+## 🛠️ Currently Working On  
+- [ ] 🔧 **Pagination**  
+
