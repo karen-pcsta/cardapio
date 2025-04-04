@@ -1,5 +1,5 @@
 package com.example.cardapio.food;
 
-public record FoodRequestDTO(String image, Integer price, String title) {
+public record FoodRequestDTO(Long id, String image, Integer price, String title) {
 
 }
